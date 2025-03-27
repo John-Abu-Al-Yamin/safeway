@@ -1,0 +1,5 @@
+/* منع التمرير الأفقي */
+html,
+body {
+  overflow-x: hidden;
+}
