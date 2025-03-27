@@ -46,12 +46,11 @@ const HeroSlider = ({ data }) => {
         {data?.sliders.map((slide) => (
           <div key={slide.id} className="p-3">
             <div className="bg-[#A1A8B080] text-white flex flex-col items-center justify-center p-5 rounded-lg shadow-lg w-full mx-auto hover:scale-95 transition-transform duration-200">
-            <img
-  src={slide.image}
-  alt={slide.module.translation.title}
-  className="w-full h-auto rounded-md"
-/>
- 
+              <img
+                src={slide.image}
+                alt={slide.module.translation.title}
+                className="w-full h-40 object-cover rounded-md"
+              />
               <h3 className="mt-3 text-lg font-bold">
                 {slide.module.translation.title}
               </h3>
